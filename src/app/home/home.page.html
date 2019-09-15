@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Diot Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="activeAlarm('0')">
+      <ion-icon name="notifications"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+  <mat-grid-list role="list" cols="2" rowHeight="2:1.5" gutterSize="1px">
+    <mat-grid-tile colspan="2" rowspan="1">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Modelo Diot {{diot.code}}</mat-card-title>
+          <mat-card-subtitle> {{user.first_name}} Tu ambiente inteligente esta conectado</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+           
+          </p>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows">
+      <mat-card (click)="tile.click">
+        <mat-card-header>
+          <mat-card-title>
+            <h2>
+              <ion-icon [name]="tile.icon"></ion-icon> {{tile.data}}
+            </h2>
+          </mat-card-title>
+          <mat-card-subtitle>{{tile.subtitle}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+
+  </mat-grid-list>
+
+
+  <!-- <ion-card>
+              <ion-card-header>
+                <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                <ion-card-title>Card Title</ion-card-title>
+              </ion-card-header>
+          
+              <ion-card-content>
+                Keep close to Nature's heart... and break clear away, once in awhile,
+                and climb a mountain or spend a week in the woods. Wash your spirit clean.
+              </ion-card-content>
+            </ion-card>
+          
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Ambiente</ion-card-title>
+                <ion-card-subtitle></ion-card-subtitle>
+              </ion-card-header>
+              <ion-item>
+                <ion-icon name="thermometer" slot="start"></ion-icon>
+                <ion-label>Card Link Item 1 .activated</ion-label>
+              </ion-item>
+          
+              <ion-item href="#">
+                <ion-icon name="water" slot="start"></ion-icon>
+                <ion-label>Card Link Item 2</ion-label>
+              </ion-item>
+              <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                  <mat-expansion-panel-header>
+                    <mat-panel-title>
+                      Self aware panel
+                    </mat-panel-title>
+                    <mat-panel-description>
+                      Currently I am {{panelOpenState ? 'open' : 'closed'}}
+                    </mat-panel-description>
+                  </mat-expansion-panel-header>
+                  <p>I'm visible because I am open</p>
+                </mat-expansion-panel>
+              </mat-accordion>
+            </ion-card>
+            
+            <ion-item-sliding>
+              <ion-item-options side="start">
+                <ion-item-option color="danger" expandable>
+                  Delete
+                </ion-item-option>
+              </ion-item-options>
+              <ion-item-options side="end">
+                <ion-item-option color="tertiary" expandable>
+                  Archive
+                </ion-item-option>
+              </ion-item-options>
+            </ion-item-sliding> -->
+</ion-content>
