@@ -1,24 +1,25 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div fxLayout="row" fxLayoutAlign="center center" class="row-height">
-    <mat-card fxFlex="30%">
-      <mat-card-title>Login</mat-card-title>
-  
-      <mat-card-content fxLayout="column">
+<ion-content >
+  <div  class="middle">
+  <mat-card >
+      <mat-card-title>
+        <ion-icon name="log-in" color="primary"></ion-icon>
+      </mat-card-title>
+      <mat-card-content>
         <mat-form-field>
-          <input matInput placeholder="Username" [(ngModel)]="user.email" required >
+          <input matInput placeholder="Username" [(ngModel)]="user.email" required>
         </mat-form-field>
         <mat-form-field>
-          <input matInput placeholder="Password" [(ngModel)]="user.password" required>
+          <input matInput placeholder="Contraseña" [(ngModel)]="user.password" required>
         </mat-form-field>
       </mat-card-content>
-  
-      <button mat-raised-button (click)="login()">Login</button>
+    
+      <button mat-raised-button (click)="login()" color="primary" >Entrar</button>
     </mat-card>
   </div>
 

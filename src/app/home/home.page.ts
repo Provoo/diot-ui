@@ -66,7 +66,6 @@ export class HomePage implements OnInit {
   }
 
   getChanels(){
-    
     this.temperature_sub = this._mqttService.observe(
       this.diot['subcribers_topics']['temperature'])
       .subscribe(
