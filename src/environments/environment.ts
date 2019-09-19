@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: "http://0.0.0.0:8000/",
+  mosquitto_hostname:"0.0.0.0"
 };
 
 /*

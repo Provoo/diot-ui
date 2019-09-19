@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
-
+import { environment } from '../../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  public api = 'http://0.0.0.0:8000/'
+  public api = environment.api
 
   constructor(private http: HttpClient) { }
 

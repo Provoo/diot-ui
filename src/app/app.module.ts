@@ -21,10 +21,11 @@ import {
   MqttModule,
   IMqttServiceOptions
 } from 'ngx-mqtt';
+import { environment } from '../environments/environment'
 
 
 export const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
-  hostname: '0.0.0.0',
+  hostname: environment.mosquitto_hostname,
   port: 9001,
 };
 
