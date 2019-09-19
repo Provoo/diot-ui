@@ -1,11 +1,11 @@
 # Diot Front aplicación web progeresiva en Ionic 4 Angular
 
-Esta aplicación pertenece proyecto Diot Alarma Inteligente.
+Esta aplicación pertenece  al proyecto Diot Alarma Inteligente.
 
 ![Drag Racing](diot-front.png)
 
 
-## Requistos
+## Requisitos
 * Ionic 4
 * Ionic-cli
 * npm
@@ -26,7 +26,7 @@ export const environment = {
 };
 ```
 
-Una vez esten configuradas las variables de entorno ejecutamos
+Una vez estén configuradas las variables de entorno ejecutamos
 ``` bat
 ionic serve
 ```
