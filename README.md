@@ -2,7 +2,7 @@
 
 Esta aplicación pertenece  al proyecto Diot Alarma Inteligente.
 
-![Drag Racing](diot-front.png)
+![App Front](diot-front.png)
 
 
 ## Requisitos
@@ -11,7 +11,7 @@ Esta aplicación pertenece  al proyecto Diot Alarma Inteligente.
 * npm
 * node
 
-Instalación
+## Instalación
 Instalar las dependencias del archivo package.json con:
 ``` bat
 npm install
