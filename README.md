@@ -1,4 +1,4 @@
-# Diot Front aplicación web progeresiva en Ionic 4 Angular
+# Diot Front aplicación web progresiva en Ionic 4 Angular
 
 Esta aplicación pertenece  al proyecto Diot Alarma Inteligente.
 
