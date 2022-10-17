@@ -1,23 +1,23 @@
 # TFG UNIR Carlos Velasco
-## Diot Front  aplicación web progresiva en Ionic 4 Angular
+## Diot-ui is an progressive web app builded in angular 4 
 
-Esta aplicación pertenece  al proyecto Diot Alarma Inteligente.
+This is part of a smart alarm builded for my collage graduation proyect fill free an is open source proyect.
 
 ![App Front](diot-front.png)
 
 
-## Requisitos
+## Requirements
 * Ionic 4
 * Ionic-cli
 * npm
 * node
 
-## Instalación
+## Install
 Instalar las dependencias del archivo package.json con:
 ``` bat
 npm install
 ```
-Para levantar la aplicación en modo desarrollador hay que tomar en cuenta en el archivo enviroments.ts y cambiar los hosts de **mosquitto** , **api diot back**
+To launch the application in developer mode, change **mosquitto** host in enviroments.ts file to point the backend
 
 ``` js
 export const environment = {
@@ -27,7 +27,7 @@ export const environment = {
 };
 ```
 
-Una vez estén configuradas las variables de entorno ejecutamos
+Once the enviroments are set up run:
 ``` bat
 ionic serve
 ```
