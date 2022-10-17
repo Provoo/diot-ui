@@ -1,5 +1,4 @@
-# TFG UNIR Carlos Velasco
-## Diot-ui is an progressive web app builded in angular 4 
+# Diot-ui is an progressive web app builded in angular 4 (Degree Project)
 
 This is part of a smart alarm builded for my collage graduation proyect fill free an is open source proyect.
 
